@@ -1,0 +1,13 @@
+[package]
+name = "announcer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread"] }
+env_logger = "0.10.0"
+log = "0.4.20"
+dotenvy = "0.15.7"
+serenity = { version = "0.11", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
